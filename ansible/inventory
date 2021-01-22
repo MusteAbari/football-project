@@ -8,9 +8,9 @@ swarm-worker2
 [managers:vars]
 ansible_user=jenkins
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
-ansible_ssh_private_key_file=~.ssh/ansible
+ansible_ssh_private_key_file=~.ssh/football
 
 [workers:vars]
 ansible_user=jenkins
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
-ansible_ssh_private_key_file=~.ssh/ansible
+ansible_ssh_private_key_file=~.ssh/football

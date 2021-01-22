@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="0" hostname="flask-vm" name="pytest" skipped="0" tests="1" time="0.273" timestamp="2021-01-22T13:06:46.419385"><testcase classname="tests.test_unit.TestResponse" name="test_result" time="0.016" /></testsuite></testsuites>

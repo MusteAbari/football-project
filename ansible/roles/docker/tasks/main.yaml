@@ -26,12 +26,12 @@
   apt: 
     name: docker-ce
     state: latest
-    update_cache: yes
-    
+    update_cache: true
 - name: Start Docker Service
   service:
     name: docker
     state: started
 - name: pip install docker
   pip:
+    executable: pip3
     name: docker

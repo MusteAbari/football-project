@@ -13,7 +13,7 @@ pipeline{
         }
         stage("Build & Push"){
             steps{
-                sh "docker-compose build && docker-compose push"
+                sh "docker-compose build --parallel && docker-compose push"
                 sh "docker system prune -af"
             }
         }

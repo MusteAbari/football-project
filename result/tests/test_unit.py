@@ -15,7 +15,7 @@ class TestResponse(TestBase):
         result = [b"Rashford will score 4 goals", b"Rashford will score 4 goals", b"Rashford will score 4 goals", b"Rashford will score 4 goals",
                 b"Rooney will not score", b"Rooney will score a hat-trick", b"Rooney will score a hat-trick", b"Rooney will score a hat-trick", 
                 b"Beckham will not score", b"Beckham will score a freekick", b"Beckham will not score", b"Beckham will score a freekick", 
-                b"Cole will not score", b"Cole will not score", b"Cole will score a tap in"]
+                b"Cole will not score", b"Cole will not score", b"Cole will not score", b"Cole will score a tap in"]
         i = 0
         for player in players:
             for team in teams:

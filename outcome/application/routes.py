@@ -17,7 +17,7 @@ def index():
     db.session.add(new_player)
     db.session.commit()
 
-    view_players = Players.query.order_by(desc("id")).limit(5)all()
+    view_players = Players.query.order_by(desc("id")).limit(5).all()
 
     return render_template(
         "index.html", 

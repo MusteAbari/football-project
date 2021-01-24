@@ -3,6 +3,7 @@ from application.models import Players
 import requests
 from requests import get
 from flask import render_template
+from sqlalchemy import desc
 
 @app.route('/', methods=['GET'])
 def index():
@@ -16,7 +17,7 @@ def index():
     db.session.add(new_player)
     db.session.commit()
 
-    view_players = Players.query.all()
+    view_players = Players.query.order_by(desc("id")).limit(5).all()
 
     return render_template(
         "index.html", 

@@ -7,3 +7,10 @@
     Player chosen: {{ player }} <br>
     Team chosen: {{ team }}
 </p>
+
+<h2>Your last couple results</h2>
+{% for result in view_players %}
+Player chosen was {{ result.name }} --- Team chosen was {{ result.team }}<br>
+The result was {{ result.result }}<br><br>
+
+{% endfor %}

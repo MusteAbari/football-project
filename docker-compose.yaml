@@ -10,16 +10,24 @@ services:
       protocol: tcp
     environment:
       DATABASE_URI: ${DATABASE_URI}
+    deploy:
+      replicas: 5
   player_backend:
     container_name: football_player_backend
     image: mustaphaa/player:latest
     build: ./player
+    deploy:
+      replicas: 5
   team_backend:
     container_name: football_team_backend
     image: mustaphaa/team:latest
     build: ./team
+    deploy:
+      replicas: 5
   result_backend:
     container_name: football_result_backend
     image: mustaphaa/result:latest
     build: ./result
+    deploy:
+      replicas: 5
   

@@ -13,6 +13,6 @@ class TestBase(TestCase):
 class TestResponse(TestBase):
     def test_get_team(self):
         with patch("random.choice") as random:
-            random.return_value = "Arsenal"
+            random.return_value = "Liverpool"
             response = self.client.get(url_for('get_team'))
-            self.assertEqual(b'Arsenal', response.data)
+            self.assertEqual(b'Liverpool', response.data)

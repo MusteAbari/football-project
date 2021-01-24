@@ -2,7 +2,7 @@ version: "3.8"
 services:
   outcome_frontend:
     container_name: football_outcome_frontend
-    image: mustaphaa/outcome:latest
+    image: mustaphaa/outcome:${app_version}
     build: ./outcome
     ports: 
     - target: 5000
@@ -14,19 +14,19 @@ services:
       replicas: 5
   player_backend:
     container_name: football_player_backend
-    image: mustaphaa/player:latest
+    image: mustaphaa/player:${app_version}
     build: ./player
     deploy:
       replicas: 5
   team_backend:
     container_name: football_team_backend
-    image: mustaphaa/team:latest
+    image: mustaphaa/team:${app_version}
     build: ./team
     deploy:
       replicas: 5
   result_backend:
     container_name: football_result_backend
-    image: mustaphaa/result:latest
+    image: mustaphaa/result:${app_version}
     build: ./result
     deploy:
       replicas: 5

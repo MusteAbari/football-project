@@ -30,4 +30,3 @@ services:
     build: ./result
     deploy:
       replicas: 5
-  

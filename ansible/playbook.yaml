@@ -12,7 +12,7 @@
     - swarm-init
 - name: Add Workers to swarm
   become: true
-  hosts: Workers
+  hosts: workers
   roles:
     - docker
     - swarm-workers

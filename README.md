@@ -4,6 +4,7 @@
 - [Brief](#brief)
 - [Trello](#trello)
 - [ED](#ED)
+- [CI Pipeline](#ci=pipeline)
 - [Services](#services)
 - [Swarm](#swarm)
 - [Risk Assessment](#risk-assessment)
@@ -37,6 +38,9 @@ I started this project by creating a Kanban board on Trello, this allowed be to 
 ## ED
 I set up a database that had 1 table and 3 rows, this was just to store the information.
 
+![](images/footballED.png)
+
+## CI Pipeline
 
 ## SERVICES
 The picture below shows how my services interact with each other, as you can see, service one connects to the other 3 services , service 2 and service 3 both generate random objects and sends it back to service 1, which is then sent to service 4 and the sent back to service 1 to display the outcome.
@@ -48,7 +52,7 @@ The swarm manager,  both workers and NGINX all run on separate VM's on GCP (Goog
 
 ## RISK ASSESSMENT
 
-
+![](images/footballRisk.png)
 
 ## TESTING
 For my unit testing I tested all for services. The fist service was the only service that connects to the database, so I tested integration with the database making sure that if there was something in the database I could read what was in there. I then went on to testing the get response status was coming back as status 200. Lastly I tested the get request from the other 3 services were coming back with the correct information.
@@ -58,7 +62,26 @@ For service 4, it was a matter of going down the different paths for my if state
 
 ## TESTING COVERAGE
 
+### Service One Coverage
+![](images/outcomeCovReport.png)
+
+### Service Two Coverage
+![](images/playerCovReport.png)
+
+### Service Three Coverage
+![](images/TeamCovReport.png)
+
+### Service Four Coverage
+![](images/ResultCovReport.png)
+
+### Cobertura Coverage
+![](images/CoberturaCovReport.png)
+
+
 ## Front End
+
+![](images/footballFrontend.png)
+
 
 ## EVALUATION
 I think overall my application was a success as its successfully does what it askes off me and does that with all the rules that I had to follow. Although the app works I do feel like there are also places for some improvement, for starters given more time I would have added bootstrap which would have allowed me to have CSS and would have made my application look more appealing. One of the issues with my app is users have to refresh the page when they want to get a new player and a new team, something I could have done better would have been generating a button that automatically reloads the page and generates a new team and player. Apart from this I think overall the app is a success.

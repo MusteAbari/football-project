@@ -10,11 +10,12 @@ class TestBase(TestCase):
 
 class TestResponse(TestBase):
     def test_result(self):
-        players = ["Rooney", "Beckham", "Cole"]
-        teams = ["Arsenal", "Chelsea", "Fulham"]
-        result = [b"Rooney will score", b"Rooney will score", b"Rooney will score", 
-                    b"Beckham will score", b"Beckham will not score", b"Beckham will score", 
-                    b"Cole will not score", b"Cole will not score", b"Cole will score"]
+        players = ["Rashford", "Rooney", "Beckham", "Cole"]
+        teams = ["Liverpool", "Arsenal", "Chelsea", "Fulham"]
+        result = [b"Rashford will score 4 goals", b"Rashford will score 4 goals", b"Rashford will score 4 goals", b"Rashford will score 4 goals",
+                b"Rooney will not score", b"Rooney will score a hat-trick", b"Rooney will score a hat-trick", b"Rooney will score a hat-trick", 
+                b"Beckham will not score", b"Beckham will score a freekick", b"Beckham will not score", b"Beckham will score a freekick", 
+                b"Cole will not score", b"Cole will not score", b"Cole will not score", b"Cole will score a tap in"]
         i = 0
         for player in players:
             for team in teams:

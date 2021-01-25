@@ -41,7 +41,7 @@ I set up a database that had 1 table and 3 rows, this was just to store the info
 ![](images/footballED.png)
 
 ## CI Pipeline
-![](images/footballPipeline1.png)
+![](images/footballPipline1.png)
 ![](images/footballPipeline2.png)
 
 

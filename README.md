@@ -10,11 +10,6 @@
 - [Risk Assessment](#risk-assessment)
 - [Testing](#testing)
 - [Testing Coverage](testing-coverage)
-        - [Risk Assessment](#risk-assessment)
-        - [Testing](#testing)
-        - [Testing Coverage](testing-coverage)
-        - [Fron End](#front-end)
-        - [Evaluation](#evaluation)
 - [Fron End](#front-end)
 - [Evaluation](#evaluation)
 

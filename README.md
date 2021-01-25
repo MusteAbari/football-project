@@ -42,6 +42,9 @@ I set up a database that had 1 table and 3 rows, this was just to store the info
 
 ## CI Pipeline
 ![](images/footballPipline1.png)
+
+### V2
+
 ![](images/footballPipeline2.png)
 
 

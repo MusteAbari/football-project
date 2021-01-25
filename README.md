@@ -33,7 +33,7 @@ For my project my idea was to create a player score generator that predicts if a
 
 ## TRELLO
 I started this project by creating a Kanban board on Trello, this allowed be to list out all of the things I needed to do in order to complete this project. I started this by writing out my user stories, then moved on to creating a "to-do" which I filled up with several cards, when I started working on that card it was moved onto the "Doing" list and the moved over to the "Done" list when completed. Below shows an image of my Trello board.
-
+![](images/footballtrelloboard.png)
 
 ## ED
 I set up a database that had 1 table and 3 rows, this was just to store the information.

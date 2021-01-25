@@ -61,6 +61,7 @@ I set up a database that had 1 table and 3 rows, this was just to store the info
 
 ## SERVICES
 The picture below shows how my services interact with each other, as you can see, service one connects to the other 3 services , service 2 and service 3 both generate random objects and sends it back to service 1, which is then sent to service 4 and the sent back to service 1 to display the outcome.
+![](images/footballservices.png)
 
 ## SWARM
 The swarm manager,  both workers and NGINX all run on separate VM's on GCP (Googles Cloud). How the swarm works starts with the manager, it pulls down the services and runs copies of them across to the workers. This exists so that the individual containers aren't overloaded by heavy traffic and so that if either server or any container stops working the app will continue to run. Nginx then acts as a reverse proxy so it's IP is where users will actually visit the web app keeping them from directly accessing the back end. It also directs which tasks will be used for each user balancing the load and making sure the containers are distributed appropriately.

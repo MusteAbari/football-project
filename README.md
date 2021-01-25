@@ -29,6 +29,16 @@ Some of the tools we are to use are:
 - Python
 - VM (GCP)
 
+Constraints
+- Kanban Board: Asana or an equivalent Kanban Board
+- Version Control: Git
+- CI Server: Jenkins
+- Configuration Management: Ansible
+- Cloud server: GCP virtual machines
+- Containerisation: Docker
+- Orchestration Tool: Docker Swarm
+- Reverse Proxy: NGINX
+
 For my project my idea was to create a player score generator that predicts if a player would score against a given team. My Core service will be responsible for showing this information, it'll also store the records in the database, which'll show the previous records of what player was given, what team what given and whether or not they will score. My second and third service were responsible for generating the players and the teams. I created my service 2 by putting several players into a list then selecting of those players at random which is passed onto service 4, same with service 3. My service for consist of a nested IF statement that assigned a player to a team and returned an outcome, will the player score or not.
 
 ## TRELLO
